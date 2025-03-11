@@ -1,0 +1,67 @@
+.container h2 {
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.container form {
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+.container input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.container input[type="number"] {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.container button[type="submit"] {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+}
+
+.comment {
+  color: black;
+  margin-top: 10px;
+  width: 70%;
+}
+
+.caja {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.caja img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.container span {
+  color: orange;
+  text-decoration: orangered;
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .reviewForm form {
+    display: flex;
+    flex-direction: column;
+  }
+}

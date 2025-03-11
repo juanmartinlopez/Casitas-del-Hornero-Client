@@ -1,0 +1,157 @@
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: start;
+}
+
+.box {
+  height: 1rem;
+  width: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: none;
+}
+
+/*-----------------------------------------------------------------------------*/
+.main {
+  display: flex;
+  flex-basis: 80%;
+  position: relative;
+  display: flex;
+  /* flex-basis: 100%; */
+  /* margin-top: 7%; */
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 60%;
+  height: fit-content;
+  border-radius: 12px;
+  box-shadow: 7px 7px 10px 3px #3e291028;
+  padding: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+  margin-top: 0;
+}
+
+/*checkbox to switch from sign up to login*/
+#chk {
+  display: none;
+}
+
+/*Login*/
+.login {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 55%;
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+}
+
+.login label {
+  margin: 25% 0 5%;
+}
+
+/* . {
+  color: black;
+  font-size: 2rem;
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+} */
+
+.input {
+  width: 100%;
+  height: 40px;
+  background: #e0dede;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+/*Register*/
+.register {
+  background: #eee;
+  border-radius: 60% / 10%;
+  transform: translateY(5%);
+  transition: 0.8s ease-in-out;
+}
+
+.register label {
+  color: #ffffff;
+  transform: scale(0.6);
+}
+
+#chk:checked~.register {
+  transform: translateY(-60%);
+}
+
+#chk:checked~.register label {
+  transform: scale(1);
+  margin: 10% 0 5%;
+}
+
+#chk:checked~.login label {
+  transform: scale(0.6);
+  margin: 5% 0 5%;
+}
+
+/*Button*/
+.form button {
+  width: 85%;
+  height: 40px;
+  margin: 12px auto 10%;
+  color: #fff;
+  background-color: #E56910;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.form button:hover {
+  color: white;
+  background-color: #E56910;
+  opacity: 1;
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+
+@media (max-width: 1200px) {
+  .main {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    padding-bottom: 0;
+  }
+
+  .form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,21 @@
+
+
+.contenedor{
+    /* background-color: red; */
+    display: flex;
+}
+
+.hotel{
+    display: flex;
+    flex-direction: column;
+    width:max-content;
+    border: none;
+    padding: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    background-color: #454545;
+    margin-bottom: 1rem;
+    justify-content: space-around;
+    color: whitesmoke;
+}
+

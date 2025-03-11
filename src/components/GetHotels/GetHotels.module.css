@@ -1,0 +1,32 @@
+.divColumns{
+    padding-left: 2em;
+  }
+
+.divValoration{
+    padding-left: 3.5em;
+}
+
+.divUserId{
+    padding-left: 2.5em;
+}
+
+.boton {
+    background-color: antiquewhite;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+
+  @media (max-width: 768px) {
+    .gigachadaowo {
+        width: 37rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .gigachadaowo {
+        width: 25rem;
+    }
+}

@@ -1,0 +1,84 @@
+.container {
+  margin-top: 20vh;
+  padding: 20px 20px;
+  border: 2px solid black;
+  box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.616);
+  height: fit-content;
+  width: fit-content;
+}
+
+.form {
+  padding-top: 2em;
+  min-width: 500px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 3px 3px 5px rgba(1, 1, 1, 0);
+}
+
+.error {
+  visibility: visible;
+  color: rgb(255, 0, 0);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.tipoHab {
+  color: grey;
+}
+
+.volver {
+  margin-top: 10rem;
+  background-color: red;
+}
+@media (max-width: 576px) {
+  .container {
+    margin-top: 0;
+  }
+  .form {
+    padding-top: 10vh;
+  }
+}
+
+.BotonDelete {
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.BotonDelete:hover {
+  background-color: rgb(201, 97, 97);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.ContainerImagen {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+}
+
+.DivPadre {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.ContainerPadre {
+  display: flex;
+  justify-content: center;
+  height: 130vh;
+}

@@ -1,0 +1,137 @@
+.perfilColaboradorContainer {
+  padding-top: 10vh;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.divHotels {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  margin: 30px;
+  padding: 25px 30px;
+}
+
+.divConteiner {
+  text-align: center;
+  height: 60vh;
+}
+
+.divConteinerHotels {
+  text-align: center;
+  height: 60vh;
+  padding: 1.5em;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.616);
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  background-color: #454545;
+  height: fit-content;
+}
+
+.divConteinerHotels h1 {
+  color: #e56910;
+}
+
+.divConteinerReviews {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.616);
+  border-radius: 0.5rem;
+  background-color: #454545;
+}
+
+.divConteinerReviews h1 {
+  color: #e56910;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.divConteinerStats {
+  text-transform: uppercase;
+  color: #e56910;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.616);
+  border-radius: 0.5rem;
+  margin-bottom: 4rem;
+  background-color: #454545;
+}
+
+.divConteinerStatsView {
+  display: flex;
+}
+
+.saludo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LinkFormHotel {
+  width: fit-content;
+  margin-left: auto;
+}
+
+.card_info h2 {
+  font-size: medium;
+}
+
+.divConteiner section {
+  display: flex;
+  flex-direction: row;
+}
+
+.Link {
+  display: inline-block;
+  background-color: #e56910;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.5vh;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s;
+  margin-bottom: 1rem;
+}
+
+.Link:hover {
+  background-color: #c45c12;
+}
+
+@media (max-width: 576px) {
+  .perfilColaboradorContainer {
+    max-width: 100%;
+    margin-top: 9;
+  }
+
+  .divConteinerHotels {
+    height: auto;
+  }
+
+  .divConteinerStatsView {
+    width: 60%;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .divConteiner {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .divConteinerReviews {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.perfilColaboradorContainer {
+  color: white;
+}

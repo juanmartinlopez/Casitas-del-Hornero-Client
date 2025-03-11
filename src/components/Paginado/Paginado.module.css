@@ -1,0 +1,33 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #E56910;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.pagination button {
+  background-color: white;
+  color: #E56910;
+  border: none;
+  border-radius: 0.3rem;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.active {
+  background-color: #E56910;
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.nonactive {
+  background-color: #E56910;
+  color: white;
+  text-decoration: none;
+}

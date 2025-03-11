@@ -1,0 +1,27 @@
+.divNames {
+    padding-left: 2em;
+}
+
+.divAmount {
+    padding-left: 3em;
+}
+
+.divPriceInd {
+    padding-left: 4em;
+}
+
+.divPriceTotal {
+    padding-left: 3em;
+}
+
+@media (max-width: 768px) {
+    .gigachadaowo {
+        width: 37rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .gigachadaowo {
+        width: 25rem;
+    }
+}

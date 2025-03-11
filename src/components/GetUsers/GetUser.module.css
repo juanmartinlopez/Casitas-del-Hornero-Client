@@ -1,0 +1,91 @@
+.ContainerUser {
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  -webkit-box-shadow: 2px 3px 17px 0px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 2px 3px 17px 0px rgba(0, 0, 0, 0.53);
+  box-shadow: 2px 3px 17px 0px rgba(0, 0, 0, 0.53);
+}
+
+.ContainerDeTodosLosUser {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-bottom: 100px;
+  background-color: aquamarine;
+}
+
+.BotonRol {
+  width: 160px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+
+  background-color: rgb(110, 146, 100);
+  margin-top: 40px;
+}
+
+.selectUserRole {
+  padding: 5px;
+  background-color: bisque;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.BotonConfirmar {
+  padding: 5px;
+  background-color: bisque;
+  border-radius: 10px;
+  font-size: 15px;
+  border: none;
+  margin-left: 10px;
+}
+
+.select {
+  background-color: antiquewhite;
+  padding: 5px;
+}
+
+.botonRol {
+  background-color: antiquewhite;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.botonGuardar {
+  background-color: antiquewhite;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.divId{
+  display: flex;
+  padding-left: 2em;
+}
+
+.divUserName{
+  padding-left: 1em;
+}
+
+@media (max-width: 768px) {
+  .gigachadaowo {
+      width: 37rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .gigachadaowo {
+      width: 25rem;
+  }
+}

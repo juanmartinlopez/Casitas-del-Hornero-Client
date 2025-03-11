@@ -1,0 +1,94 @@
+.form-container {
+  width: 450px;
+  border-radius: 0.75rem;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  color: rgb(0, 0, 0);
+  box-shadow: 7px 7px 10px 3px #3e291028;
+  color: rgb(0, 0, 0);
+  height: 810px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.DivDeBienvenido {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.form {
+  margin-top: 1.5rem;
+}
+
+.input-group {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.input-group label {
+  display: block;
+  color: rgb(0, 0, 0);
+  margin-bottom: 4px;
+}
+
+.input-group input {
+  width: 100%;
+  border-radius: 0.375rem;
+  border: 1px solid #E56910;
+  outline: 0;
+  padding: 0.75rem 1rem;
+  color: rgb(0, 0, 0);
+}
+
+.input-group input:focus {
+  border-color: #E56910;
+}
+
+.forgot {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgb(0, 0, 0);
+  margin: 8px 0 14px 0;
+}
+
+.sign {
+  display: block;
+  width: 100%;
+  background-color: #E56910;
+  padding: 0.75rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 600;
+}
+.sign:hover {
+background-color: #E56910;
+}
+
+.line {
+  height: 1px;
+  flex: 1 1 0%;
+  background-color: rgba(55, 65, 81, 1);
+}
+
+.signup {
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(156, 163, 175, 1);
+}
+
+.DivContenedorPadre {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,42 @@
+.cardContainer {
+  width: 18rem;
+  background-color: #454545;
+  margin :10px;
+  color: black
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+}
+
+.imgCarrito {
+  width: 40px;
+  height: 35px;
+}
+
+.BotonCarrito {
+  overflow: hidden;
+  background-color: #E56910;
+  color: white;
+  text-align: center;
+  margin: 10px;
+  height: 40px;
+  border: none;
+  font-size: 15px;
+  width: fit-content;
+  padding: 10px;
+  opacity: 0.9;
+}
+.BotonCarrito:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  opacity: 1;
+}
+.BotonCarrito:active {
+background-color: #bd560c;
+}

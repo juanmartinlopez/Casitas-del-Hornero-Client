@@ -1,0 +1,110 @@
+.landing_container {
+  background-color: #F1F2EE;;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+.btnrg button {
+  color: white;
+  background-color: #E56910;
+  opacity: 0.9;
+}
+.btnrg button:hover {
+  color: white;
+  background-color: #E56910;
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  opacity: 1;
+}
+.container_img {
+  display: flex;
+  flex-basis: 50%;
+  /* background-color: red; */
+  overflow: hidden;
+  background-image: url("../../assets/images/horneroleft.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.container {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  /* background-image: linear-gradient(135deg, #FFD700, #FF4500); */
+}
+
+.btnrg {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  text-align: right;
+  width: 100%;
+}
+
+/* --------INICIO DE MEDIA QUERIE---------- */
+
+@media (max-width: 1200px) {
+  .landing_container {
+    flex-direction: column;
+    height: 100vh;
+    /* min-height: 100vh; */
+  }
+
+  .container_img {
+    flex-basis: 35%;
+    background-position: center 30%;
+    /* background-position: left 25%; */
+
+  }
+
+  .container {
+    flex-basis: 65%;
+    height: 100%;
+    background-image: none;
+    /* overflow: hidden; */
+    /* justify-content: start; */
+  }
+
+  .btnrg {
+    display: flex;
+    order: 1;
+    padding-top: 1rem;
+
+    justify-content: center;
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .landing_container {
+    flex-direction: column;
+    /* min-height: 100vh; */
+  }
+
+  .container_img {
+    flex-basis: 30%;
+  }
+
+  .container {
+    flex-basis: 70%;
+    background-image: none;
+    /* justify-content: start; */
+  }
+
+  .btnrg {
+    margin-top: -2rem;
+    z-index: 54;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+}

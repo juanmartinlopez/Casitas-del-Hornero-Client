@@ -1,0 +1,165 @@
+.formHotelContainer {
+  display: flex;
+  padding-top: 2em;
+  background-color: #1e1e1e;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+.form {
+  padding: 2em;
+  border: 2px solid black;
+  max-width: 850px;
+  box-shadow: 3px 3px 5px rgba(1, 1, 1, 0.616);
+  border-color: #e0e0e0;
+}
+.form h1 {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid rgb(194, 191, 191);
+}
+
+.error {
+  visibility: visible;
+  color: rgb(255, 0, 0);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.checkmark {
+  border: solid 1px grey;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 1.3em;
+  margin-right: 1em;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px 1px rgba(0, 5);
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #e56910;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 0.45em;
+  top: 0.25em;
+  width: 0.25em;
+  height: 0.5em;
+  border: solid white;
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotate(45deg);
+}
+
+.checkContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.checkContainer span {
+  color: whitesmoke;
+}
+
+.selectService {
+  color: whitesmoke;
+}
+
+.checkbox {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.nameService {
+  color: #212529;
+  font-weight: 400;
+}
+
+.select {
+  appearance: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 0.5rem;
+  background-color: #e56910;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 7px;
+  border: 2px solid white;
+  margin: 5px;
+}
+.uploadContainer {
+  width: fit-content;
+  color: #e56910;
+}
+
+.form h1 {
+  color: whitesmoke;
+}
+
+.label {
+  color: whitesmoke;
+}
+
+.BotonDelete {
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.BotonDelete:hover {
+  background-color: rgb(201, 97, 97);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.ContainerImagen {
+  background-color: rgb(55, 54, 54);
+  border: none;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+}
+
+.DivPadre {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}

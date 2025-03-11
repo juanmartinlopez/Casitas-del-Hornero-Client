@@ -1,0 +1,77 @@
+.section {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+}
+
+.containerError {
+  background-color: white;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  border-radius: 5px;
+  color: #E56910;
+  font-size: 2rem;
+}
+
+.containerError h1 {
+  font-size: 3.5em;
+}
+
+.containerError h2 {
+  font-size: 1.5em;
+}
+
+.imagenHornero {
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+}
+
+.containerPadreError {
+  display: flex;
+  margin-top: 150px;
+  justify-content: center;
+}
+
+.p {
+  padding: 5px;
+  font-weight: 750;
+}
+
+.botonInicio {
+  font-size: 1em;
+  padding: 10px;
+  background-color: #E56910;
+  color: white;
+  width: fit-content;
+  padding: 0 1em;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.botonInicio:hover {
+  cursor: pointer;
+
+}
+
+.divDelContenido {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.divDeLaImagen {
+  display: flex;
+  justify-content: center;
+}

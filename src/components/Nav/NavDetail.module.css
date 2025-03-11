@@ -1,0 +1,83 @@
+.nav {
+  width: 100vw;
+  height: 10vh;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orange;
+  z-index: 3; /* encima de todo */
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 30px;
+}
+
+.p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menuButton {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.show {
+  display: flex;
+}
+
+@media (min-width: 769px) {
+  .menuButton {
+    display: none;
+  }
+
+  .links {
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .link {
+    margin-bottom: 0;
+    margin-right: 10px;
+    text-align: center;
+  }
+}
+
+.iconoCarrito {
+  width: 30px;
+  height: 25px;
+}

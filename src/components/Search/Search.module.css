@@ -1,0 +1,70 @@
+.div {
+  margin: 20px;
+  display: flex;
+  padding: 10px;
+
+  width: 300px;
+  height: fit-content;
+  /* text-align: center; */
+  -webkit-box-shadow: 10px 10px 42px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 42px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 42px -13px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+
+/* .divHijo {
+  background-color: #000000;
+} */
+
+.divMayor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  border: #f7931e;
+  background-color: rgb(210, 210, 210);
+  width: 80px;
+  height: 40px;
+  margin: 20px;
+}
+
+.container {
+  width: 320px;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  top: calc(50% + 5px);
+  transform: translateY(calc(-50% - 5px));
+}
+
+.fancy {
+  width: 100px;
+  height: 45px;
+  margin-top: 18px;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f7931e;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container:hover > .icon {
+  animation: anim 1s linear infinite;
+}
+
+@keyframes anim {
+  0%,
+  100% {
+    transform: translateY(calc(-50% - 5px)) scale(1);
+  }
+
+  50% {
+    transform: translateY(calc(-50% - 5px)) scale(1.1);
+  }
+}

@@ -1,0 +1,202 @@
+.DivContainerLoading {
+  width: 100%;
+  height: 100%;
+}
+
+.wifi {
+  --background: #ff8707;
+  --front-color: #e56910;
+  --back-color: #e09846;
+  --text-color: #f18306;
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wifi svg {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wifi svg circle {
+  position: absolute;
+  fill: none;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform: rotate(-100deg);
+  transform-origin: center;
+}
+
+.wifi svg circle.back {
+  stroke: var(--back-color);
+}
+
+.wifi svg circle.front {
+  stroke: var(--front-color);
+}
+
+.wifi svg.outer {
+  height: 86px;
+  width: 86px;
+}
+
+.wifi svg.outer circle {
+  stroke-dasharray: 62.75 188.25;
+}
+
+.wifi svg.outer circle.back {
+  animation: circle-outer135 1.8s ease infinite 0.3s;
+}
+
+.wifi svg.outer circle.front {
+  animation: circle-outer135 1.8s ease infinite 0.15s;
+}
+
+.wifi svg.middle {
+  height: 60px;
+  width: 60px;
+}
+
+.wifi svg.middle circle {
+  stroke-dasharray: 42.5 127.5;
+}
+
+.wifi svg.middle circle.back {
+  animation: circle-middle6123 1.8s ease infinite 0.25s;
+}
+
+.wifi svg.middle circle.front {
+  animation: circle-middle6123 1.8s ease infinite 0.1s;
+}
+
+.wifi svg.inner {
+  height: 34px;
+  width: 34px;
+}
+
+.wifi svg.inner circle {
+  stroke-dasharray: 22 66;
+}
+
+.wifi svg.inner circle.back {
+  animation: circle-inner162 1.8s ease infinite 0.2s;
+}
+
+.wifi svg.inner circle.front {
+  animation: circle-inner162 1.8s ease infinite 0.05s;
+}
+
+.wifi .text {
+  position: absolute;
+  bottom: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: lowercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
+.wifi .text::before,
+.wifi .text::after {
+  content: attr(data-text);
+}
+
+.wifi .text::before {
+  color: var(--text-color);
+}
+
+.wifi .text::after {
+  color: var(--front-color);
+  animation: text-animation76 3.6s ease infinite;
+  position: absolute;
+  left: 0;
+}
+
+@keyframes circle-outer135 {
+  0% {
+    stroke-dashoffset: 25;
+  }
+
+  25% {
+    stroke-dashoffset: 0;
+  }
+
+  65% {
+    stroke-dashoffset: 301;
+  }
+
+  80% {
+    stroke-dashoffset: 276;
+  }
+
+  100% {
+    stroke-dashoffset: 276;
+  }
+}
+
+@keyframes circle-middle6123 {
+  0% {
+    stroke-dashoffset: 17;
+  }
+
+  25% {
+    stroke-dashoffset: 0;
+  }
+
+  65% {
+    stroke-dashoffset: 204;
+  }
+
+  80% {
+    stroke-dashoffset: 187;
+  }
+
+  100% {
+    stroke-dashoffset: 187;
+  }
+}
+
+@keyframes circle-inner162 {
+  0% {
+    stroke-dashoffset: 9;
+  }
+
+  25% {
+    stroke-dashoffset: 0;
+  }
+
+  65% {
+    stroke-dashoffset: 106;
+  }
+
+  80% {
+    stroke-dashoffset: 97;
+  }
+
+  100% {
+    stroke-dashoffset: 97;
+  }
+}
+
+@keyframes text-animation76 {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  50% {
+    clip-path: inset(0);
+  }
+
+  100% {
+    clip-path: inset(0 0 0 100%);
+  }
+}

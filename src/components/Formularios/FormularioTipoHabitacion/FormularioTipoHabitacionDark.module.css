@@ -1,0 +1,77 @@
+.container {
+  background-color: #1e1e1e;
+  padding: 20px 20px;
+  height: fit-content;
+  width: fit-content;
+  margin-top: 20vh;
+  color: chocolate;
+}
+
+.form {
+  padding-top: 2em;
+  min-width: 500px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 3px 3px 5px rgba(1, 1, 1, 0);
+}
+
+.error {
+  visibility: visible;
+  color: rgb(255, 0, 0);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.tipoHab {
+  color: grey;
+}
+
+.volver {
+  margin-top: 10rem;
+  background-color: red;
+}
+
+.BotonDelete {
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.BotonDelete:hover {
+  background-color: rgb(201, 97, 97);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.ContainerImagen {
+  background-color: rgb(55, 54, 54);
+  border: none;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+}
+
+.DivPadre {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.ContainerPadre {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(12, 13, 13);
+  height: 130vh;
+}
