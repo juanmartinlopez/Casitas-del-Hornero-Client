@@ -23,14 +23,14 @@ const TrolleyCard = ({ id, name, image, price, stock, people, amount, array, set
 
     const sumar = async (value, idUser, id_Rommtype) => {
         setLoadingUp(true)
-        const valor = await axios.put(`https://casitasdelhornero.onrender.com/cart/${idUser}/${id_Rommtype}?putAmount=${value}`)
+        const valor = await axios.put(`https://casitas-del-hornero-api.vercel.app/cart/${idUser}/${id_Rommtype}?putAmount=${value}`)
         setCantidad(valor.data)
         setLoadingUp(false)
     }
 
     const restar = async (value, idUser, id_Rommtype) => {
         setLoadingDown(true)
-        const valor = await axios.put(`https://casitasdelhornero.onrender.com/cart/${idUser}/${id_Rommtype}?putAmount=${value}`)
+        const valor = await axios.put(`https://casitas-del-hornero-api.vercel.app/cart/${idUser}/${id_Rommtype}?putAmount=${value}`)
         setCantidad(valor.data)
         setLoadingDown(false)
     }

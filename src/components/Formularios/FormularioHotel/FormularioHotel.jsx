@@ -41,7 +41,7 @@ const reducer = (state, action) => {
 };
 
 const FormularioHotel = () => {
-  const URL_BASE = "https://casitasdelhornero.onrender.com";
+  const URL_BASE = "https://casitas-del-hornero-api.vercel.app";
 
   let User = PedirLocalStorage();
   const navigate = useNavigate();

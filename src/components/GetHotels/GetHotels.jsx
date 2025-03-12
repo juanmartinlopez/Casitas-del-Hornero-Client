@@ -22,7 +22,7 @@ useEffect(()=>{
 
 const FuncioBloquear = async (id_Hotel) => {
      await axios.put(
-        `https://casitasdelhornero.onrender.com/hotels/status/${id_Hotel}`
+        `https://casitas-del-hornero-api.vercel.app/hotels/status/${id_Hotel}`
        );
     await dispatch(getHotelsAdmin(user.id))
 }

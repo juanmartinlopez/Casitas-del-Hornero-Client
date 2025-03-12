@@ -86,7 +86,7 @@ const OlvidasteLaPassword = () => {
       } else {
         GuardarDatosParaCambiarPassword(stateInput);
         await axios.get(
-          `https://casitasdelhornero.onrender.com/email?email=${stateInput}`
+          `https://casitas-del-hornero-api.vercel.app/email?email=${stateInput}`
         ); //! cambiar en el deploy
         swal({
           text: translations[idioma].EnviamosMail,

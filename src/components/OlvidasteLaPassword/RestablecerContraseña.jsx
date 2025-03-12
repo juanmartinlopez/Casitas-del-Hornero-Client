@@ -127,7 +127,7 @@ const RestablecerContraseña = () => {
         const { password } = statePassword;
 
         await axios.put(
-          `https://casitasdelhornero.onrender.com/user/password`,
+          `https://casitas-del-hornero-api.vercel.app/user/password`,
           {
             email,
             password,

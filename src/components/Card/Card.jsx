@@ -19,7 +19,7 @@ function Cards({ id, name, image, province, department, rating, valoration }) {
   const theme = useSelector((state) => state.theme);
   const style = theme === "light" ? styleLight : styleDark;
   const [isFav, setIsFav] = useState(false);
-  const URL_BASE = "https://casitasdelhornero.onrender.com/";
+  const URL_BASE = "https://casitas-del-hornero-api.vercel.app/";
   let ratingArray = Array(rating).fill(rating);
 
   let User = PedirLocalStorage();

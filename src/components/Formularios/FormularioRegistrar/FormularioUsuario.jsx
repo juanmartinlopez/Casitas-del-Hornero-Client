@@ -72,7 +72,7 @@ const FormularioUsuario = () => {
       try {
         const { username, password, email, admin } = usuario;
         await axios.post(
-          `https://casitasdelhornero.onrender.com/user`,
+          `https://casitas-del-hornero-api.vercel.app/user`,
           { username, password, email, admin }
         );
         swal({

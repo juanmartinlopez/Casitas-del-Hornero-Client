@@ -68,7 +68,7 @@ const PerfilUsuario = ({ countCarrito, setCountCarrito }) => {
         const mensaje = result;
         axios
           .post(
-            `https://casitasdelhornero.onrender.com/request`,
+            `https://casitas-del-hornero-api.vercel.app/request`,
             { message: mensaje, id_user }
           )
           .then((response) => {
