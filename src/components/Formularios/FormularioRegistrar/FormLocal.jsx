@@ -107,10 +107,10 @@ const FormLocal = () => {
       try {
         const { username, password, email } = usuario;
         await axios.get(
-          `https://casitasdelhornero.onrender.com/email/Registro/${email}`
+          `https://casitas-del-hornero-api.vercel.app/email/Registro/${email}`
         ); //! cambiar en el deploy
         await axios.post(
-          `https://casitasdelhornero.onrender.com/user`,
+          `https://casitas-del-hornero-api.vercel.app/user`,
           { username, password, email }
         );
 
