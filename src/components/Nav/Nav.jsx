@@ -15,6 +15,7 @@ import SwitchButton from "../SwitchButton/SwitchButton";
 import SwitchButtonFlex from "../SwitchButton/SwitchButtonFlex";
 import SymbolsCurrencyFlex from "../CurrencyExchange/SymbolsCurrencyFlex";
 import { updateLanguage } from "../../redux/Actions/Actions";
+import horneroicono from "../../assets/images/horneroleft.png"
 
 // import "NavButon.css";
 
@@ -117,7 +118,7 @@ const NavBar = ({ countCarrito }) => {
             <div className="logo">
               <img
                 className="img"
-                src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/utbvsuv2bhb7gbubbaqk"
+                src={horneroicono}
                 alt="LaCasitaDelHornero"
               />
               <div className="tituloLogo">CasitasDelHornero</div>
