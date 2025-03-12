@@ -75,7 +75,7 @@ const FormularioIngresa = () => {
     } else {
       try {
         const response = await axios.post(
-          `https://casitasdelhornero.onrender.com/user`,
+          `https://casitas-del-hornero-api.vercel.app/user`,
           usuario
         );
 
