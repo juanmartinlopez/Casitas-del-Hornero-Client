@@ -6,6 +6,7 @@ import style from "./NavDetail.module.css";
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import image from "../../image/carrito-de-compras.png";
+import horneroicono from "../../assets/images/horneroleft.jpg"
 
 //?----------------- COMPONENTE NAVBAR DETAIL ------------------------------------
 const NavDetail = () => {
@@ -52,7 +53,7 @@ const NavDetail = () => {
         <div className={style.logo}>
           <img
             className={style.img}
-            src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/utbvsuv2bhb7gbubbaqk"
+            src={horneroicono}
             alt="LaCasitaDelHornero"
           />
           <p className={style.p}>CasitasDelHornero</p>

@@ -15,7 +15,7 @@ import SwitchButton from "../SwitchButton/SwitchButton";
 import SwitchButtonFlex from "../SwitchButton/SwitchButtonFlex";
 import SymbolsCurrencyFlex from "../CurrencyExchange/SymbolsCurrencyFlex";
 import { updateLanguage } from "../../redux/Actions/Actions";
-import horneroicono from "../../assets/images/horneroleft.png"
+import horneroicono from "../../assets/images/horneroleft.jpg"
 
 // import "NavButon.css";
 
