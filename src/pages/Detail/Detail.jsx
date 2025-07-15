@@ -9,7 +9,7 @@ import CarruselDetail from "./Carrucel/CarruselDetail";
 import FuncionServices from "./FuncionService/FuncionServicios";
 import Maps from "./Map/Map.jsx";
 import Reviews from "./Review/Reviews";
-import TypeRoom from "./Typeroom/TypeRoom";
+import TypeRoom from "./TypeRoom/TypeRoom";
 //actions
 import {
   FuncionClearDetail,
