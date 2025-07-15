@@ -1,0 +1,307 @@
+@import "tailwindcss";
+
+:root {
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    --primary-color: #1a1f1a;
+    --secondary-color: #1C1C1C;
+    --important-color: #C9A86A;
+    --text-color: #F5F5F5;
+    --secundary-text-color: #B4B4B4;
+}
+
+/* Estilos globales para asegurar el tema oscuro */
+html {
+    background-color: var(--primary-color) !important;
+    min-height: 100vh !important;
+}
+
+body {
+    background-color: var(--primary-color) !important;
+    color: var(--text-color) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Asegurar que el root mantenga el fondo negro */
+#root {
+    background-color: var(--primary-color) !important;
+    min-height: 100vh !important;
+}
+
+/* Quitar subrayado de TODOS los enlaces */
+a, 
+a:hover, 
+a:focus, 
+a:active, 
+a:visited {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+/* Estilos específicos para el navbar */
+nav a,
+nav button,
+nav span {
+    color: var(--text-color) !important;
+    text-decoration: none !important;
+}
+
+nav a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Override Bootstrap styles específicamente, pero permitir colores de Tailwind */
+.container,
+.container-fluid,
+.row {
+    background-color: transparent !important;
+}
+
+/* Solo elementos div generales, no los que tienen clases específicas de color */
+div:not([class*="bg-"]),
+section:not([class*="bg-"]),
+main:not([class*="bg-"]),
+article:not([class*="bg-"]) {
+    background-color: transparent !important;
+}
+
+/* Estilos específicos para Leaflet Map */
+.leaflet-container {
+    background-color: #f0f0f0 !important;
+    height: 300px !important;
+    width: 100% !important;
+    font-family: inherit !important;
+    border-radius: 0.5rem !important;
+}
+
+.leaflet-tile-pane {
+    filter: none !important;
+}
+
+.leaflet-tile {
+    max-width: none !important;
+    filter: none !important;
+}
+
+.leaflet-control-zoom {
+    border: none !important;
+    border-radius: 4px !important;
+}
+
+.leaflet-control-zoom a {
+    background-color: #fff !important;
+    color: #333 !important;
+    border: 1px solid #ccc !important;
+    text-decoration: none !important;
+}
+
+.leaflet-control-zoom a:hover {
+    background-color: #f0f0f0 !important;
+    color: #333 !important;
+}
+
+.leaflet-popup-content-wrapper {
+    background-color: #fff !important;
+    color: #333 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2) !important;
+}
+
+.leaflet-popup-tip {
+    background-color: #fff !important;
+}
+
+/* Asegurar que los tiles se carguen correctamente */
+.leaflet-layer {
+    filter: none !important;
+}
+
+.leaflet-map-pane {
+    z-index: 1 !important;
+}
+
+/* Forzar la visibilidad de los tiles */
+.leaflet-tile-container {
+    opacity: 1 !important;
+}
+
+/* Clase específica para el contenedor del mapa */
+.leaflet-map-container {
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+.leaflet-map-container .leaflet-container {
+    background: #f0f0f0 !important;
+    border-radius: 8px !important;
+}
+
+/* Estilos personalizados para el DatePicker */
+.react-datepicker-wrapper {
+    width: 100% !important;
+}
+
+.react-datepicker-popper {
+    z-index: 9999 !important;
+}
+
+.react-datepicker {
+    background-color: var(--secondary-color) !important;
+    border: 1px solid var(--important-color) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 25px -3px rgba(201, 168, 106, 0.3) !important;
+}
+
+.react-datepicker__header {
+    background-color: var(--primary-color) !important;
+    border-bottom: 1px solid var(--important-color) !important;
+    border-radius: 12px 12px 0 0 !important;
+}
+
+.react-datepicker__month-container {
+    background-color: var(--secondary-color) !important;
+}
+
+.react-datepicker__month {
+    background-color: var(--secondary-color) !important;
+}
+
+.react-datepicker__week {
+    background-color: var(--secondary-color) !important;
+}
+
+.react-datepicker__day-names {
+    background-color: var(--primary-color) !important;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name {
+    color: var(--text-color) !important;
+}
+
+.react-datepicker__day {
+    color: var(--text-color) !important;
+}
+
+.react-datepicker__day:hover {
+    background-color: var(--important-color) !important;
+    color: var(--primary-color) !important;
+}
+
+.react-datepicker__day--selected {
+    background-color: var(--important-color) !important;
+    color: var(--primary-color) !important;
+}
+
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range {
+    background-color: var(--important-color) !important;
+    color: var(--primary-color) !important;
+}
+
+.react-datepicker__navigation {
+    border: none !important;
+}
+
+.react-datepicker__navigation--previous {
+    border-right-color: var(--important-color) !important;
+}
+
+.react-datepicker__navigation--next {
+    border-left-color: var(--important-color) !important;
+}
+
+.react-datepicker__day--disabled {
+    color: var(--secundary-text-color) !important;
+    opacity: 0.5 !important;
+}
+
+/* Estilos para los checkboxes personalizados */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid var(--important-color);
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--important-color);
+    border-color: var(--important-color);
+}
+
+input[type="checkbox"]:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+input[type="checkbox"]:hover {
+    border-color: var(--important-color);
+    box-shadow: 0 0 0 2px rgba(201, 168, 106, 0.2);
+}
+
+/* Estilos para Bootstrap Carousel en tema oscuro */
+.carousel-control-prev,
+.carousel-control-next {
+    background: linear-gradient(90deg, rgba(196, 168, 106, 0.8) 0%, rgba(196, 168, 106, 0.6) 100%) !important;
+    border-radius: 50% !important;
+    width: 50px !important;
+    height: 50px !important;
+    margin: auto 15px !important;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: var(--important-color) !important;
+    transform: scale(1.1) !important;
+    transition: all 0.3s ease !important;
+}
+
+.carousel-indicators {
+    bottom: 15px !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--important-color) !important;
+    border: 2px solid var(--text-color) !important;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    margin: 0 5px !important;
+}
+
+.carousel-indicators .active {
+    background-color: var(--text-color) !important;
+    border-color: var(--important-color) !important;
+}
+
+.carousel-item {
+    transition: transform 0.6s ease-in-out !important;
+}
+
+/* Efectos hover para las tarjetas de habitaciones */
+.room-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 20px 40px rgba(196, 168, 106, 0.15) !important;
+}
+
+/* Animaciones suaves */
+.transition-all {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.transform:hover {
+    transform: translateY(-2px) scale(1.02) !important;
+}
