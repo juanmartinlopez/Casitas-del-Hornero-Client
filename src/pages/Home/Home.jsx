@@ -157,18 +157,18 @@ const Home = ({ countCarrito, setCountCarrito }) => {
                 {/* Empty State */}
                 {Hotels.allHotels?.filter((hotel) => hotel.status).length ===
                   0 && (
-                  <div className="text-center py-16">
-                    <div className="text-6xl text-secundary-text-color mb-4">
-                      🏨
+                    <div className="text-center py-16">
+                      <div className="text-6xl text-secundary-text-color mb-4">
+                        🏨
+                      </div>
+                      <h3 className="text-2xl font-semibold text-text-color mb-2">
+                        No hay casitas disponibles
+                      </h3>
+                      <p className="text-secundary-text-color">
+                        Intenta ajustar tus filtros de búsqueda
+                      </p>
                     </div>
-                    <h3 className="text-2xl font-semibold text-text-color mb-2">
-                      No hay casitas disponibles
-                    </h3>
-                    <p className="text-secundary-text-color">
-                      Intenta ajustar tus filtros de búsqueda
-                    </p>
-                  </div>
-                )}
+                  )}
               </div>
             </section>
 
